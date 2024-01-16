@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     /* font control */
     font-family: 'Roboto', sans-serif;
 }
@@ -11,7 +12,7 @@ html{
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(40,40,40,0.3),rgba(13,71,161,0.3)),url(images/GRIN1.png);
+    background-image: linear-gradient(rgba(63,0,0,0.35),rgba(13,71,161,0.2)),url(images/GRIN1.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -85,7 +86,7 @@ nav img{
     text-align: center;
 }
 .text-box p{
-    font-size: 18px;
+    font-size: 24px;
     margin: 10px 0 40px;
     color: #fff;
     text-align: center;
@@ -162,18 +163,20 @@ nav .fa{
     padding-bottom: 10px;
 }
 .intro h1{
-    font-size: 36px;
-    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
     padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
 }
 .intro img{
     padding: 10px;
 }
 .intro p{
     color: #777;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 300;
-    line-height: 22px; /* control line to line gap*/
+    line-height: 30px; /* control line to line gap*/
     padding: 10px;
     text-align: justify
 }
@@ -187,27 +190,170 @@ nav .fa{
     padding-bottom: 10px;
 }
 .goal h1{
-    font-size: 36px;
-    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
     padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
 }
 .goal p{
     color: #777;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 300;
-    line-height: 22px; /* control line to line gap*/
+    line-height: 30px; /* control line to line gap*/
     padding: 10px;
     text-align: justify
 }
 
 
+/*------------- people -------------*/
 
+.people{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.people-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
+    text-align: center;
+}
+.people-col{
+    flex-basis: 31%;
+    width: 100%;
+    padding: 0.5em 0;
+    border-radius: 10px;
+    padding: 20px;
+}
+.people-row h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.card {
+    box-shadow: 0 0 0.2em rgba(25, 0, 58, 0.15);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    cursor: pointer;
+}
+.card .img-container{
+    width: 8em;
+    height: 8em;
+    background-color: midnightblue;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+.card img{
+    width: 100%;
+    border-radius: 50%;
+}
+.card h3{
+    font-weight: 500;
+}
+.card p{
+    font-weight: 300;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+.people-icons{
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between
+}
+.card a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+}
+.card:hover{
+    background-image: url(Images/background.jpg);
+    z-index: 2;
+    cursor: default;
+    color: white;
+}
+.card:hover .img-container {
+    transform: scale(1.15);
+    transition: 0.3s;
+    font-weight: 500;
+    
+}
+/*------------- footer -------------*/
+footer{
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right,#00093c, #3f0000);
+    color: white;
+    padding: 50px 0 30px;
 
-
-
-
-
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer-row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-col{
+    flex-basis: 25%;
+    padding 10px;
+}
+.footer-col h3{
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+.email-id{
+    width: fit-content;
+    margin: 20px 0;
+    color: white;
+    text-decoration: none;
+    
+}
+.footer-link{
+    color: white;
+    
+}
+footer ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+footer ul li a{
+    text-decoration: none;
+    
+}
+.social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: black;
+    background: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.fa-heart{
+    color: lightpink;
+}
+.heart{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    margin-top: 20px;
+}
 /* to-top button */
 .to-top{
     background: #ffc100;
